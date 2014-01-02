@@ -1320,7 +1320,7 @@ var JSHINT = (function () {
 
 		x.led = function (left) {
 			if (!state.option.inESNext()) {
-				warning("W104", state.tokens.curr, "arrow function syntax (=>)");
+				warning("W119", state.tokens.curr, "arrow function syntax (=>)");
 			}
 
 			nobreaknonadjacent(state.tokens.prev, state.tokens.curr);
@@ -1656,7 +1656,7 @@ var JSHINT = (function () {
 		if (_.has(["[", "{"], t.value)) {
 			if (lookupBlockType().isDestAssign) {
 				if (!state.option.inESNext()) {
-					warning("W104", state.tokens.curr, "destructuring expression");
+					warning("W124", state.tokens.curr, "destructuring expression");
 				}
 				values = destructuringExpression();
 				values.forEach(function (tok) {
@@ -2370,7 +2370,7 @@ var JSHINT = (function () {
 
 	prefix("...", function () {
 		if (!state.option.inESNext()) {
-			warning("W104", this, "spread/rest operator");
+			warning("W119", this, "spread/rest operator");
 		}
 		if (!state.tokens.next.identifier) {
 			error("E030", state.tokens.next, state.tokens.next.value);
@@ -2716,11 +2716,11 @@ var JSHINT = (function () {
 		var blocktype = lookupBlockType(true);
 		if (blocktype.isCompArray) {
 			if (!state.option.inESNext()) {
-				warning("W119", state.tokens.curr, "array comprehension");
+				warning("W124", state.tokens.curr, "array comprehension");
 			}
 			return comprehensiveArrayExpression();
 		} else if (blocktype.isDestAssign && !state.option.inESNext()) {
-			warning("W104", state.tokens.curr, "destructuring assignment");
+			warning("W124", state.tokens.curr, "destructuring assignment");
 		}
 		var b = state.tokens.curr.line !== state.tokens.next.line;
 		this.first = [];
@@ -2804,7 +2804,7 @@ var JSHINT = (function () {
 						}
 					} else if (curr.value === "...") {
 						if (!state.option.inESNext()) {
-							warning("W104", curr, "spread/rest operator");
+							warning("W119", curr, "spread/rest operator");
 						}
 						continue;
 					} else if (curr.value !== ",") {
@@ -2843,7 +2843,7 @@ var JSHINT = (function () {
 				}
 			} else if (state.tokens.next.value === "...") {
 				if (!state.option.inESNext()) {
-					warning("W104", state.tokens.next, "spread/rest operator");
+					warning("W119", state.tokens.next, "spread/rest operator");
 				}
 				advance("...");
 				nospace();
@@ -2864,7 +2864,7 @@ var JSHINT = (function () {
 			}
 			if (state.tokens.next.id === "=") {
 				if (!state.option.inESNext()) {
-					warning("W119", state.tokens.next, "default parameters");
+					warning("W124", state.tokens.next, "default parameters");
 				}
 				advance("=");
 				pastDefault = true;
@@ -3214,7 +3214,7 @@ var JSHINT = (function () {
 					g = false;
 					if (state.tokens.next.value === "*" && state.tokens.next.type === "(punctuator)") {
 						if (!state.option.inESNext()) {
-							warning("W104", state.tokens.next, "generator functions");
+							warning("W119", state.tokens.next, "generator functions");
 						}
 						advance("*");
 						g = true;
@@ -3228,7 +3228,7 @@ var JSHINT = (function () {
 
 					if (state.tokens.next.value === "(") {
 						if (!state.option.inESNext()) {
-							warning("W104", state.tokens.curr, "concise methods");
+							warning("W119", state.tokens.curr, "concise methods");
 						}
 						doFunction(i, undefined, g);
 					} else if (!isclassdef) {
@@ -3283,7 +3283,7 @@ var JSHINT = (function () {
 		var id, ids;
 		var identifiers = [];
 		if (!state.option.inESNext()) {
-			warning("W104", state.tokens.curr, "destructuring expression");
+			warning("W124", state.tokens.curr, "destructuring expression");
 		}
 		var nextInnerDE = function () {
 			var ident;
@@ -3360,7 +3360,7 @@ var JSHINT = (function () {
 		var lone; // State variable to know if it is a lone identifier, or a destructuring statement.
 
 		if (!state.option.inESNext())
-			warning("W104", state.tokens.curr, "const");
+			warning("W124", state.tokens.curr, "const");
 
 		this.first = [];
 		for (;;) {
@@ -3495,7 +3495,7 @@ var JSHINT = (function () {
 		var tokens, lone, value, letblock;
 
 		if (!state.option.inESNext()) {
-			warning("W104", state.tokens.curr, "let");
+			warning("W124", state.tokens.curr, "let");
 		}
 
 		if (state.tokens.next.value === "(") {
@@ -3586,7 +3586,7 @@ var JSHINT = (function () {
 	function classdef(stmt) {
 		/*jshint validthis:true */
 		if (!state.option.inESNext()) {
-			warning("W104", state.tokens.curr, "class");
+			warning("W119", state.tokens.curr, "class");
 		}
 		if (stmt) {
 			// BindingIdentifier
@@ -3985,7 +3985,7 @@ var JSHINT = (function () {
 		// if we're in a for (… in|of …) statement
 		if (_.contains(inof, nextop.value)) {
 			if (!state.option.inESNext() && nextop.value === "of") {
-				error("W104", nextop, "for of");
+				error("W124", nextop, "for of");
 			}
 			if (state.tokens.next.id === "var") {
 				advance("var");
@@ -4162,7 +4162,7 @@ var JSHINT = (function () {
 		if (state.option.inESNext(true) && !funct["(generator)"]) {
 			error("E046", state.tokens.curr, "yield");
 		} else if (!state.option.inESNext()) {
-			warning("W104", state.tokens.curr, "yield");
+			warning("W124", state.tokens.curr, "yield");
 		}
 		funct["(generator)"] = "yielded";
 		if (this.line === state.tokens.next.line || !state.option.inMoz(true)) {
@@ -4374,7 +4374,7 @@ var JSHINT = (function () {
 		var block = lookupBlockType();
 		if (block.notJson) {
 			if (!state.option.inESNext() && block.isDestAssign) {
-				warning("W104", state.tokens.curr, "destructuring assignment");
+				warning("W124", state.tokens.curr, "destructuring assignment");
 			}
 			statements();
 		// otherwise parse json value

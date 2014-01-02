@@ -797,17 +797,28 @@ exports["test: destructuring var as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(3, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3,  "'z' is not defined.")
 		.addError(8,  "'a' is defined but never used.")
 		.addError(6,  "'b' is defined but never used.")
@@ -835,17 +846,28 @@ exports["test: destructuring var as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(3, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3,  "'z' is not defined.")
 		.addError(8,  "'a' is defined but never used.")
 		.addError(6,  "'b' is defined but never used.")
@@ -985,24 +1007,42 @@ exports["test: destructuring const as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'const' is only available in JavaScript 1.7.")
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(2, "'const' is only available in JavaScript 1.7.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(3, "'const' is only available in JavaScript 1.7.")
-		.addError(3, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'const' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'const' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'const' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'const' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'const' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'a' is defined but never used.")
 		.addError(1, "'b' is defined but never used.")
 		.addError(1, "'c' is defined but never used.")
@@ -1037,24 +1077,42 @@ exports["test: destructuring const as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'const' is only available in JavaScript 1.7.")
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(2, "'const' is only available in JavaScript 1.7.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(3, "'const' is only available in JavaScript 1.7.")
-		.addError(3, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'const' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'const' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'const' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'const' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'const' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'a' is defined but never used.")
 		.addError(1, "'b' is defined but never used.")
 		.addError(1, "'c' is defined but never used.")
@@ -1165,13 +1223,20 @@ exports["test: destructuring globals as es5"] = function (test) {
 
 	TestRun(test)
 		.addError(4,  "'z' is not defined.")
-		.addError(2, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(3, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring assignment' is only available in JavaScript 1.7.")
+		.addError(2, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true}); // es5
 
 	test.done();
@@ -1191,13 +1256,20 @@ exports["test: destructuring globals as legacy JS"] = function (test) {
 
 	TestRun(test)
 		.addError(4,  "'z' is not defined.")
-		.addError(2, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(3, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(8, "'destructuring assignment' is only available in JavaScript 1.7.")
+		.addError(2, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true});
 
 	test.done();
@@ -1284,12 +1356,15 @@ exports["test: destructuring assign of empty values as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'a' is defined but never used.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "'c' is defined but never used.")
 		.addError(2, "'d' is defined but never used.")
-		.addError(3, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(3, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'e' is defined but never used.")
 		.addError(3, "'f' is defined but never used.")
 		.test(code, {unused: true, undef: true}); // es5
@@ -1305,12 +1380,15 @@ exports["test: destructuring assign of empty values as JS legacy"] = function (t
 	];
 
 	TestRun(test)
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'a' is defined but never used.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "'c' is defined but never used.")
 		.addError(2, "'d' is defined but never used.")
-		.addError(3, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(3, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'e' is defined but never used.")
 		.addError(3, "'f' is defined but never used.")
 		.addError(3, "Extra comma. (it breaks older versions of IE)")
@@ -1386,9 +1464,12 @@ exports["test: let statement as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -1409,9 +1490,12 @@ exports["test: let statement as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -1479,9 +1563,12 @@ exports["test: let statement out of scope as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'x' is defined but never used.")
 		.addError(5, "'z' is defined but never used.")
 		.addError(3, "'y' is defined but never used.")
@@ -1506,9 +1593,12 @@ exports["test: let statement out of scope as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'x' is defined but never used.")
 		.addError(5, "'z' is defined but never used.")
 		.addError(3, "'y' is defined but never used.")
@@ -1580,9 +1670,12 @@ exports["test: let statement in functions as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -1605,9 +1698,12 @@ exports["test: let statement in functions as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -1686,10 +1782,14 @@ exports["test: let statement not in scope as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(4, "'let' is only available in JavaScript 1.7.")
-		.addError(6, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "'z' is defined but never used.")
 		.addError(3, "'y' is defined but never used.")
 		.addError(4, "'bar' is defined but never used.")
@@ -1718,10 +1818,14 @@ exports["test: let statement not in scope as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(4, "'let' is only available in JavaScript 1.7.")
-		.addError(6, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "'z' is defined but never used.")
 		.addError(3, "'y' is defined but never used.")
 		.addError(4, "'bar' is defined but never used.")
@@ -1806,12 +1910,18 @@ exports["test: let statement in for loop as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(2, "'let' is only available in JavaScript 1.7.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
-		.addError(8, "'let' is only available in JavaScript 1.7.")
-		.addError(11, "'let' is only available in JavaScript 1.7.")
-		.addError(14, "'let' is only available in JavaScript 1.7.")
+		.addError(2, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(11, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(14, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print", "Iterator"]}); // es5
 
 	test.done();
@@ -1838,12 +1948,18 @@ exports["test: let statement in for loop as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(2, "'let' is only available in JavaScript 1.7.")
-		.addError(2, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
-		.addError(8, "'let' is only available in JavaScript 1.7.")
-		.addError(11, "'let' is only available in JavaScript 1.7.")
-		.addError(14, "'let' is only available in JavaScript 1.7.")
+		.addError(2, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(8, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(11, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(14, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print", "Iterator"]});
 
 	test.done();
@@ -1948,8 +2064,10 @@ exports["test: let statement in destructured for loop as es5"] = function (test)
 	];
 
 	TestRun(test)
-		.addError(21, "'let' is only available in JavaScript 1.7.")
-		.addError(21, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(21, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(21, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -1984,8 +2102,10 @@ exports["test: let statement in destructured for loop as legacy JS"] = function 
 	];
 
 	TestRun(test)
-		.addError(21, "'let' is only available in JavaScript 1.7.")
-		.addError(21, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(21, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(21, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -2059,9 +2179,12 @@ exports["test: let statement (as seen in jetpack) as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'const' is only available in JavaScript 1.7.")
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'let block' is only available in Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true,
 					 predef: ["require", "xferable", "options"]}); // es5
@@ -2087,9 +2210,12 @@ exports["test: let statement (as seen in jetpack) as legacy JS"] = function (tes
 	];
 
 	TestRun(test)
-		.addError(1, "'const' is only available in JavaScript 1.7.")
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'let block' is only available in Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true,
 					 predef: ["require", "xferable", "options"]});
@@ -2141,13 +2267,16 @@ exports["test: let block and let expression as es5"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'let block' is only available in Mozilla JavaScript extensions (use moz option).")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'let block' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(4, "'let expressions' is only available in Mozilla JavaScript extensions " +
 			"(use moz option).")
-		.addError(4, "'let' is only available in JavaScript 1.7.")
+		.addError(4, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 	test.done();
 };
@@ -2163,13 +2292,16 @@ exports["test: let block and let expression as legacy JS"] = function (test) {
 	];
 
 	TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'let block' is only available in Mozilla JavaScript extensions (use moz option).")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'let block' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(4, "'let expressions' is only available in Mozilla JavaScript extensions " +
 			"(use moz option).")
-		.addError(4, "'let' is only available in JavaScript 1.7.")
+		.addError(4, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 	test.done();
 };
@@ -2278,9 +2410,12 @@ exports["test destructuring function as es5"] = function (test) {
 		"whois(user);"
 	];
 	TestRun(test)
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -2300,9 +2435,12 @@ exports["test destructuring function as legacy JS"] = function (test) {
 		"whois(user);"
 	];
 	TestRun(test)
-		.addError(1, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
+		.addError(1, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -2350,7 +2488,8 @@ exports["test: invalid for each as ES5"] = function (test) {
 	TestRun(test)
 		.addError(1, "Invalid for each loop.")
 		.addError(1, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
-		.addError(1, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -2366,7 +2505,8 @@ exports["test: invalid for each as legacy JS"] = function (test) {
 	TestRun(test)
 		.addError(1, "Invalid for each loop.")
 		.addError(1, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
-		.addError(1, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -2432,8 +2572,10 @@ exports["test: esnext generator as es5"] = function (test) {
 	];
 	TestRun(test)
 		.addError(1, "'function*' is only available in ES6 (use esnext option).")
-		.addError(4, "'yield' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring assignment' is only available in JavaScript 1.7.")
+		.addError(4, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -2456,8 +2598,10 @@ exports["test: esnext generator as legacy JS"] = function (test) {
 	];
 	TestRun(test)
 		.addError(1, "'function*' is only available in ES6 (use esnext option).")
-		.addError(4, "'yield' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring assignment' is only available in JavaScript 1.7.")
+		.addError(4, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -2542,9 +2686,12 @@ exports["test: mozilla generator as es5"] = function (test) {
 		"	print(g.next());"
 	];
 	TestRun(test)
-		.addError(4, "'yield' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(9, "'let' is only available in JavaScript 1.7.")
+		.addError(4, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(9, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print", "Iterator"]}); // es5
 
 	test.done();
@@ -2565,9 +2712,12 @@ exports["test: mozilla generator as legacy JS"] = function (test) {
 		"	print(g.next());"
 	];
 	TestRun(test)
-		.addError(4, "'yield' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring assignment' is only available in JavaScript 1.7.")
-		.addError(9, "'let' is only available in JavaScript 1.7.")
+		.addError(4, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'destructuring assignment' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(9, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print", "Iterator"]});
 
 	test.done();
@@ -2713,12 +2863,14 @@ exports["test: array comprehension as es5"] = function (test) {
 	];
 	TestRun(test)
 		.addError(1, "'function*' is only available in ES6 (use esnext option).")
-		.addError(2, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'yield' is only available in JavaScript 1.7.")
+		.addError(2, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(7, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -2738,14 +2890,16 @@ exports["test: moz-style array comprehension as es5"] = function (test) {
 		"print('evens:', evens);"
 	];
 	TestRun(test)
-		.addError(2, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'yield' is only available in JavaScript 1.7.")
+		.addError(2, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "Expected 'for' and instead saw 'i'.")
 		.addError(6, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(7, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(7, "Expected 'for' and instead saw 'i'.")
 		.addError(7, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.test(code, {unused: true, undef: true, predef: ["print"]}); // es5
@@ -2767,12 +2921,14 @@ exports["test: array comprehension as legacy JS"] = function (test) {
 		"print('evens:', evens);"
 	];
 	TestRun(test)
-		.addError(2, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'yield' is only available in JavaScript 1.7.")
+		.addError(2, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(7, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -2792,14 +2948,16 @@ exports["test: moz-style array comprehension as legacy JS"] = function (test) {
 		"print('evens:', evens);"
 	];
 	TestRun(test)
-		.addError(2, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'yield' is only available in JavaScript 1.7.")
+		.addError(2, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(6, "Expected 'for' and instead saw 'i'.")
 		.addError(6, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(7, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(7, "Expected 'for' and instead saw 'i'.")
 		.addError(7, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, unused: true, undef: true, predef: ["print"]});
@@ -2857,11 +3015,11 @@ exports['test: array comprehension with dest array at global scope as es5'] = fu
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -2875,15 +3033,15 @@ exports['test: moz-style array comprehension with dest array at global scope as 
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "Expected 'for' and instead saw '['.")
 		.addError(1, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "Expected 'for' and instead saw '['.")
 		.addError(2, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "Expected 'for' and instead saw '['.")
 		.addError(3, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.test(code, {undef: true, predef: ["print"]}); // es5
@@ -2899,11 +3057,11 @@ exports['test: array comprehension with dest array at global scope as JS legacy'
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, undef: true, predef: ["print"]});
 
 	test.done();
@@ -2917,15 +3075,15 @@ exports['test: moz-style array comprehension with dest array at global scope as 
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "Expected 'for' and instead saw '['.")
 		.addError(1, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(2, "Expected 'for' and instead saw '['.")
 		.addError(2, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(3, "Expected 'for' and instead saw '['.")
 		.addError(3, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
 		.test(code, {es3: true, undef: true, predef: ["print"]});
@@ -2984,9 +3142,9 @@ exports["test: array comprehension imbrication with dest array as es5"] = functi
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -2998,9 +3156,9 @@ exports["test: moz-style array comprehension imbrication with dest array as es5"
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -3013,9 +3171,9 @@ exports["test: array comprehension imbrication with dest array as legacy JS"] = 
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "Expected 'for' and instead saw '['.")
 		.addError(1, "Expected 'for' and instead saw '['.")
 		.addError(1, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
@@ -3031,9 +3189,9 @@ exports["test: moz-style array comprehension imbrication with dest array as lega
 	];
 	TestRun(test)
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "'array comprehension' is only available in ES6 " +
-			"(use esnext option).")
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(1, "Expected 'for' and instead saw '['.")
 		.addError(1, "Expected 'for' and instead saw '['.")
 		.addError(1, "'for each' is only available in Mozilla JavaScript extensions (use moz option).")
@@ -3190,10 +3348,14 @@ exports["test: for of as es5"] = function (test) {
 		"for (let x of [1,2,3,4]) print(x);"
 	];
 	TestRun(test)
-		.addError(1, "'for of' is only available in JavaScript 1.7.")
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(4, "'for of' is only available in JavaScript 1.7.")
-		.addError(4, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'for of' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'for of' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -3207,10 +3369,14 @@ exports["test: for of as legacy JS"] = function (test) {
 		"for (let x of [1,2,3,4]) print(x);"
 	];
 	TestRun(test)
-		.addError(1, "'for of' is only available in JavaScript 1.7.")
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(4, "'for of' is only available in JavaScript 1.7.")
-		.addError(4, "'let' is only available in JavaScript 1.7.")
+		.addError(1, "'for of' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'for of' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.test(code, {undef: true, predef: ["print"]}); // es5
 
 	test.done();
@@ -3437,23 +3603,40 @@ exports["fat arrows support"] = function (test) {
 	run.test(code, { undef: true, moz: true });
 
 	run = TestRun(test)
-		.addError(1, "'let' is only available in JavaScript 1.7.")
-		.addError(1, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(2, "'let' is only available in JavaScript 1.7.")
-		.addError(2, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(3, "'let' is only available in JavaScript 1.7.")
-		.addError(3, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(4, "'let' is only available in JavaScript 1.7.")
-		.addError(4, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(5, "'let' is only available in JavaScript 1.7.")
-		.addError(5, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(6, "'let' is only available in JavaScript 1.7.")
-		.addError(6, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(7, "'let' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(11, "'const' is only available in JavaScript 1.7.")
-		.addError(13, "'arrow function syntax (=>)' is only available in JavaScript 1.7.");
+		.addError(1, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(1, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(2, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(2, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(3, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(3, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(4, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(5, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(6, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(7, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(11, "'const' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(13, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).");
 
 	run.test(code); // es5
 	run.test(code, {es3: true});
@@ -3478,10 +3661,12 @@ exports["concise methods support"] = function (test) {
 	run.test(code, {moz: true});
 
 	run = TestRun(test)
-		.addError(2, "'concise methods' is only available in JavaScript 1.7.")
-		.addError(5, "'generator functions' is only available in JavaScript 1.7.")
-		.addError(5, "'concise methods' is only available in JavaScript 1.7.")
-		.addError(6, "'yield' is only available in JavaScript 1.7.");
+		.addError(2, "'concise methods' is only available in ES6 (use esnext option).")
+		.addError(5, "'generator functions' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(5, "'concise methods' is only available in ES6 (use esnext option).")
+		.addError(6, "'yield' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).");
 
 	run.test(code); // es5
 	run.test(code, {es3: true});
@@ -3564,15 +3749,26 @@ exports["spread rest operator support"] = function (test) {
 	run.test(code, {moz: true});
 
 	run = TestRun(test)
-		.addError(5, "'spread/rest operator' is only available in JavaScript 1.7.")
-		.addError(6, "'let' is only available in JavaScript 1.7.")
-		.addError(7, "'let' is only available in JavaScript 1.7.")
-		.addError(7, "'spread/rest operator' is only available in JavaScript 1.7.")
-		.addError(8, "'spread/rest operator' is only available in JavaScript 1.7.")
-		 .addError(11, "'let' is only available in JavaScript 1.7.")
-		 .addError(11, "'spread/rest operator' is only available in JavaScript 1.7.")
-		 .addError(11, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		 .addError(11, "'spread/rest operator' is only available in JavaScript 1.7.");
+		.addError(5, "'spread/rest operator' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(6, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'spread/rest operator' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(8, "'spread/rest operator' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(11, "'let' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(11, "'spread/rest operator' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(11, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(11, "'spread/rest operator' is only available in ES6 " +
+			"(use esnext option).");
+	run.test(code, {es3: true});
+	run.test(code, {}); // es5
 
 	test.done();
 };
@@ -4121,56 +4317,106 @@ exports["test destructuring function parameters as esnext"] = function (test) {
 exports["test destructuring function parameters as es5"] = function (test) {
 	var src = fs.readFileSync(__dirname + "/fixtures/destparam.js", "utf8");
 	TestRun(test)
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(10, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(10, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(11, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(11, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(14, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(14, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(15, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(15, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(16, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(16, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(16, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(17, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(17, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(18, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(18, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(21, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(21, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(21, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(22, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(22, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(22, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(23, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(23, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(23, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(24, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(24, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(24, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(27, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(27, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(27, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(28, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(28, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(28, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(29, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(29, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(29, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(30, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(30, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(30, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(5, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(10, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(10, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(11, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(11, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(14, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(14, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(15, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(15, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(16, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(16, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(16, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(17, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(17, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(18, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(18, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(21, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(21, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(21, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(22, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(22, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(22, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(23, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(23, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(23, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(24, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(24, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(24, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(27, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(27, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(27, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(28, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(28, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(28, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(29, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(29, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(29, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(30, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(30, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(30, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
 		.test(src, {unused: true, undef: true});
 
 	test.done();
@@ -4179,56 +4425,106 @@ exports["test destructuring function parameters as es5"] = function (test) {
 exports["test destructuring function parameters as legacy JS"] = function (test) {
 	var src = fs.readFileSync(__dirname + "/fixtures/destparam.js", "utf8");
 	TestRun(test)
-		.addError(4, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(4, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(5, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(5, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(6, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(7, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(10, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(10, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(11, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(11, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(14, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(14, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(15, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(15, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(16, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(16, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(16, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(17, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(17, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(18, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(18, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(21, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(21, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(21, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(22, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(22, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(22, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(23, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(23, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(23, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(24, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(24, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(24, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(27, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(27, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(27, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(28, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(28, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(28, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(29, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(29, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(29, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
-		.addError(30, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(30, "'destructuring expression' is only available in JavaScript 1.7.")
-		.addError(30, "'arrow function syntax (=>)' is only available in JavaScript 1.7.")
+		.addError(4, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(4, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(5, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(5, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(6, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(7, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(10, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(10, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(11, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(11, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(14, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(14, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(15, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(15, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(16, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(16, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(16, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(17, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(17, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(18, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(18, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(21, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(21, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(21, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(22, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(22, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(22, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(23, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(23, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(23, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(24, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(24, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(24, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(27, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(27, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(27, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(28, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(28, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(28, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(29, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(29, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(29, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
+		.addError(30, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(30, "'destructuring expression' is only available in ES6 " +
+			"(use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(30, "'arrow function syntax (=>)' is only available in ES6 " +
+			"(use esnext option).")
 		.test(src, {es3: true, unused: true, undef: true});
 
 	test.done();

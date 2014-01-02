@@ -195,7 +195,9 @@ var warnings = {
 	W120: "You might be leaking a variable ({a}) here.",
 	W121: "Extending prototype of native object: '{a}'.",
 	W122: "Invalid typeof value '{a}'",
-	W123: "'{a}' is already defined in outer scope."
+	W123: "'{a}' is already defined in outer scope.",
+	W124: "'{a}' is only available in ES6 (use esnext option) " +
+		"and Mozilla JavaScript extensions (use moz option)."
 };
 
 var info = {

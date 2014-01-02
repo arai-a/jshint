@@ -691,11 +691,11 @@ exports.testES6Modules = function (test) {
 		.addError(34, "'export' is only available in ES6 (use esnext option).")
 		.addError(38, "'export' is only available in ES6 (use esnext option).")
 		.addError(40, "'export' is only available in ES6 (use esnext option).")
-		.addError(40, "'class' is only available in JavaScript 1.7.")
+		.addError(40, "'class' is only available in ES6 (use esnext option).")
 		.addError(41, "'export' is only available in ES6 (use esnext option).")
-		.addError(41, "'class' is only available in JavaScript 1.7.")
+		.addError(41, "'class' is only available in ES6 (use esnext option).")
 		.addError(42, "'export' is only available in ES6 (use esnext option).")
-		.addError(42, "'class' is only available in JavaScript 1.7.")
+		.addError(42, "'class' is only available in ES6 (use esnext option).")
 		.test(src, {});
 
 	var src2 = [
@@ -734,8 +734,8 @@ exports.testDefaultArguments = function (test) {
 		.test(src, { moz: true });
 
 	TestRun(test)
-		.addError(7, "'default parameters' is only available in ES6 (use esnext option).")
-		.addError(11, "'default parameters' is only available in ES6 (use esnext option).")
+		.addError(7, "'default parameters' is only available in ES6 (use esnext option) and Mozilla JavaScript extensions (use moz option).")
+		.addError(11, "'default parameters' is only available in ES6 (use esnext option) and Mozilla JavaScript extensions (use moz option).")
 		.addError(11, "Regular parameters cannot come after default parameters.")
 		.test(src, {  });
 
