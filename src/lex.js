@@ -684,6 +684,10 @@ Lexer.prototype = {
       return (/^[0-7]$/).test(str);
     }
 
+    function isBinaryDigit(str) {
+      return (/^[01]$/).test(str);
+    }
+
     function isHexDigit(str) {
       return (/^[0-9a-fA-F]$/).test(str);
     }
@@ -743,6 +747,98 @@ Lexer.prototype = {
         }
 
         // Base-8 numbers.
+        if (char === "o" || char === "O") {
+          if (!state.option.esnext) {
+            this.trigger("warning", {
+              code: "W119",
+              line: this.line,
+              character: this.char,
+              data: [ "Octal integer literal" ]
+            });
+          }
+
+          index += 1;
+          value += char;
+
+          while (index < length) {
+            char = this.peek(index);
+            if (!isOctalDigit(char)) {
+              break;
+            }
+            value += char;
+            index += 1;
+          }
+
+          if (value.length <= 2) { // 0o
+            return {
+              type: Token.NumericLiteral,
+              value: value,
+              isMalformed: true
+            };
+          }
+
+          if (index < length) {
+            char = this.peek(index);
+            if (isIdentifierStart(char)) {
+              return null;
+            }
+          }
+
+          return {
+            type: Token.NumericLiteral,
+            value: value,
+            base: 8,
+            isMalformed: false
+          };
+        }
+
+        // Base-2 numbers.
+        if (char === "b" || char === "B") {
+          if (!state.option.esnext) {
+            this.trigger("warning", {
+              code: "W119",
+              line: this.line,
+              character: this.char,
+              data: [ "Binary integer literal" ]
+            });
+          }
+
+          index += 1;
+          value += char;
+
+          while (index < length) {
+            char = this.peek(index);
+            if (!isBinaryDigit(char)) {
+              break;
+            }
+            value += char;
+            index += 1;
+          }
+
+          if (value.length <= 2) { // 0b
+            return {
+              type: Token.NumericLiteral,
+              value: value,
+              isMalformed: true
+            };
+          }
+
+          if (index < length) {
+            char = this.peek(index);
+            if (isIdentifierStart(char)) {
+              return null;
+            }
+          }
+
+          return {
+            type: Token.NumericLiteral,
+            value: value,
+            base: 2,
+            isMalformed: false
+          };
+        }
+
+        // Base-8 numbers.
         if (isOctalDigit(char)) {
           index += 1;
           value += char;
@@ -774,6 +870,7 @@ Lexer.prototype = {
             type: Token.NumericLiteral,
             value: value,
             base: 8,
+            isLegacy: true,
             isMalformed: false
           };
         }
@@ -1662,7 +1759,8 @@ Lexer.prototype = {
           line: this.line,
           character: this.char
         }, checks, function () {
-          return state.directive["use strict"] && token.base === 8;
+          return state.directive["use strict"] && token.base === 8 && 'isLegacy' in token &&
+            token.isLegacy;
         });
 
         this.trigger("Number", {
